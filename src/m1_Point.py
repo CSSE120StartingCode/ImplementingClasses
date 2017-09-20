@@ -9,17 +9,17 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    test_init()
-    test_repr()
-    test_clone()
-    test_move_to()
-    test_move_by()
-    test_get_number_of_moves_made()
-    test_get_distance_from()
-    test_get_distance_from_start()
-    test_get_distance_traveled()
-    test_closer_to()
-    test_halfway_to()
+    run_test_init()
+    run_test_repr()
+    run_test_clone()
+    run_test_move_to()
+    run_test_move_by()
+    run_test_get_number_of_moves_made()
+    run_test_get_distance_from()
+    run_test_get_distance_from_start()
+    run_test_get_distance_traveled()
+    run_test_closer_to()
+    run_test_halfway_to()
 
 ########################################################################
 # IMPORTANT:
@@ -45,9 +45,9 @@ def main():
 ########################################################################
 
 
-def test_init():
+def run_test_init():
     """
-    Tests the   __INIT__   method of the Point class.
+    Tests the   __init__   method of the Point class.
       -- IMPORTANT:  There are   TWO  underscores on each side.
       -- Note:  the   __init__  method runs when one constructs
          a Point.  See examples below.
@@ -69,7 +69,7 @@ def test_init():
        as needed so that they always indicate the CURRENT position
        of the Point.
 
-    EXAMPLE: The following shows   __INIT__   in action.
+    EXAMPLE: The following shows   __init__   in action.
     You may also use this example to test this method.
 
         p1 = Point(30, 18)
@@ -93,39 +93,39 @@ def test_init():
     """
     # ------------------------------------------------------------------
     # TODO: 3.
-    #   a. Read the above specification of the   __INIT__   method.
+    #   a. Read the above specification of the   __init__   method.
     #        Do NOT proceed until you understand WHAT it should do
     #        (but not necessarily HOW it will do it).
     #        NO CODE YET.  Ask questions as needed.
     #
     #   b. Examine the EXAMPLE code in the doc-string above.
     #        Make sure that you see how that code works, and how it
-    #        TESTS the __INIT__ method.  ** ASK QUESTIONS AS NEEDED. **
+    #        TESTS the __init__ method.  ** ASK QUESTIONS AS NEEDED. **
     #
     #   c. Select the code in the EXAMPLE in the doc-string above.
-    #        Copy-and-paste it into this  TEST_INIT  function, putting
+    #        Copy-and-paste it into this  RUN_TEST_INIT  function, putting
     #        the copied code just below the PRINT statements below.
     #
     #      Use the Tab and Shift-Tab keystrokes as needed to fix the
     #        indentation of the pasted code.
     #
     #      You cannot RUN the copy-pasted tests because you
-    #        have not (yet) implemented the  __INIT__  method.
+    #        have not (yet) implemented the  __init__  method.
     #
-    #   d. Implement and test the  __INIT__  method.
+    #   d. Implement and test the  __init__  method.
     #        Make sure that you UNDERSTAND your code and are not just
     #        "pattern matching" from examples.
     #        ASK QUESIONS AS NEEDED.  COMMIT YOUR WORK.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   __INIT__   method of the Point class.')
+    print('Testing the   __init__   method of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_repr():
+def run_test_repr():
     """
-    Tests the   __REPR__   method of the Point class.
+    Tests the   __repr__   method of the Point class.
       -- IMPORTANT:  There are   TWO  underscores on each side.
       -- Note:  the   __repr__  method is called by the PRINT
            function and other functions that DISPLAY a Point object.
@@ -141,7 +141,7 @@ def test_repr():
       x and y coordinates.
     Side effects: None.
 
-    EXAMPLE: The following shows   __REPR__   in action.
+    EXAMPLE: The following shows   __repr__   in action.
     You may also use this example to test this method.
 
         p1 = Point(30, 18)
@@ -165,17 +165,17 @@ def test_repr():
     """
     # ------------------------------------------------------------------
     # TODO: 4.  Follow the same instructions as in TODO 3 above,
-    #           but for the  __REPR__  method specified above.
+    #           but for the  __repr__  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   __REPR__   method of the Point class.')
+    print('Testing the   __repr__   method of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_clone():
+def run_test_clone():
     """
-    Tests the   CLONE   method of the Point class.
+    Tests the   clone   method of the Point class.
 
     Here is the specification for the   clone   method:
     What comes in:
@@ -185,7 +185,7 @@ def test_clone():
       as the x and y coordinates of this Point.
     Side effects: None.
 
-    EXAMPLE: The following shows   CLONE   in action.
+    EXAMPLE: The following shows   clone   in action.
     You may also use this example to test this method.
 
         p1 = Point(10, 8)
@@ -226,17 +226,17 @@ def test_clone():
    """
     # ------------------------------------------------------------------
     # TODO: 5.  Follow the same instructions as in TODO 3 above,
-    #           but for the  CLONE  method specified above.
+    #           but for the  clone  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   CLONE   method of the Point class.')
+    print('Testing the   clone   method of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_move_to():
+def run_test_move_to():
     """
-    Tests the   MOVE_TO   method of the Point class.
+    Tests the   move_to   method of the Point class.
 
     Here is the specification for the   move_to   method:
     What comes in:
@@ -250,7 +250,7 @@ def test_move_to():
        that store the position of this Point to the given x and y.
        This has the effect of "moving" this Point TO the given (x, y).
 
-    EXAMPLE: The following shows   MOVE_TO   in action.
+    EXAMPLE: The following shows   move_to   in action.
     You may also use this example to test this method.
 
         p1 = Point(10, 8)
@@ -285,17 +285,17 @@ def test_move_to():
     """
     # ------------------------------------------------------------------
     # TODO: 6.  Follow the same instructions as in TODO 3 above,
-    #           but for the  MOVE_TO  method specified above.
+    #           but for the  move_to  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   MOVE_TO   method of the Point class.')
+    print('Testing the   move_to   method of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_move_by():
+def run_test_move_by():
     """
-    Tests the   MOVE_BY   method of the Point class.
+    Tests the   move_by   method of the Point class.
 
     Here is the specification for the   move_by   method:
     What comes in:
@@ -310,7 +310,7 @@ def test_move_by():
        that store the position of this Point.
        This has the effect of "moving" this Point BY the given (dx, dy).
 
-    EXAMPLE: The following shows   MOVE_BY   in action.
+    EXAMPLE: The following shows   move_by   in action.
     You may also use this example to test this method.
 
         p1 = Point(10, 8)
@@ -345,17 +345,17 @@ def test_move_by():
     """
     # ------------------------------------------------------------------
     # TODO: 7.  Follow the same instructions as in TODO 3 above,
-    #           but for the  MOVE_BY  method specified above.
+    #           but for the  move_by  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   MOVE_BY   method of the Point class.')
+    print('Testing the   move_by   method of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_get_number_of_moves_made():
+def run_test_get_number_of_moves_made():
     """
-    Tests the   GET_NUMBER_OF_MOVES_MADE   method of the Point class.
+    Tests the   get_number_of_moves_made   method of the Point class.
 
     Here is the specification for the  get_number_of_moves_made  method:
     What comes in:
@@ -365,7 +365,7 @@ def test_get_number_of_moves_made():
     Side effects:
        ** You figure out what side effect(s) MUST happen! **
 
-    EXAMPLE: The following shows   GET_NUMBER_OF_MOVES_MADE   in action.
+    EXAMPLE: The following shows   get_number_of_moves_made   in action.
     You may also use this example to test this method.
 
         p1 = Point(10, 8)
@@ -421,18 +421,17 @@ def test_get_number_of_moves_made():
     """
     # ------------------------------------------------------------------
     # TODO: 8.  Follow the same instructions as in TODO 3 above,
-    #    but for the  GET_NUMBER_OF_MOVES_MADE  method specified above.
+    #    but for the  get_number_of_moves_made  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   GET_NUMBER_OF_MOVES_MADE   method')
-    print('of the Point class.')
+    print('Testing the   get_number_of_moves_made   method.')
     print('-----------------------------------------------------------')
 
 
-def test_get_distance_from():
+def run_test_get_distance_from():
     """
-    Tests the   GET_DISTANCE_FROM   method of the Point class.
+    Tests the   get_distance_from   method of the Point class.
 
     Here is the specification for the   get_distance_from   method:
     What comes in:
@@ -443,7 +442,7 @@ def test_get_distance_from():
     Side effects:
        ** You figure out WHETHER OR NOT side effect(s) MUST happen! **
 
-    EXAMPLE: The following shows   GET_DISTANCE_FROM   in action.
+    EXAMPLE: The following shows   get_distance_from   in action.
     You may also use this example to test this method.
 
         p1 = Point(1, 5)
@@ -487,17 +486,17 @@ def test_get_distance_from():
     """
     # ------------------------------------------------------------------
     # TODO: 9.  Follow the same instructions as in TODO 3 above,
-    #    but for the  GET_DISTANCE_FROM  method specified above.
+    #    but for the  get_distance_from  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the  GET_DISTANCE_FROM  method of the Point class.')
+    print('Testing the  get_distance_from  method of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_get_distance_from_start():
+def run_test_get_distance_from_start():
     """
-    Tests the   GET_DISTANCE_FROM_START   method of the Point class.
+    Tests the   get_distance_from_START   method of the Point class.
 
     Here is the specification for the   get_distance_from_start  method:
     What comes in:
@@ -508,7 +507,7 @@ def test_get_distance_from_start():
     Side effects:
        ** You figure out WHETHER OR NOT side effect(s) MUST happen! **
 
-    EXAMPLE: The following shows   GET_DISTANCE_FROM_START   in action.
+    EXAMPLE: The following shows   get_distance_from_START   in action.
     You may also use this example to test this method.
 
         p1 = Point(20, 30)
@@ -543,18 +542,18 @@ def test_get_distance_from_start():
     """
     # ------------------------------------------------------------------
     # TODO: 10.  Follow the same instructions as in TODO 3 above,
-    #    but for the  GET_DISTANCE_FROM_START  method specified above.
+    #    but for the  get_distance_from_START  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   GET_DISTANCE_FROM_START   method')
+    print('Testing the   get_distance_from_START   method')
     print('of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_get_distance_traveled():
+def run_test_get_distance_traveled():
     """
-    Tests the   GET_DISTANCE_TRAVELED   method of the Point class.
+    Tests the   get_distance_traveled   method of the Point class.
 
     Here is the specification for the   get_distance_traveled   method:
     What comes in:
@@ -564,7 +563,7 @@ def test_get_distance_traveled():
     Side effects:
        ** You figure out WHETHER OR NOT side effect(s) MUST happen! **
 
-    EXAMPLE: The following shows   GET_DISTANCE_TRAVELED   in action.
+    EXAMPLE: The following shows   get_distance_traveled   in action.
     You may also use this example to test this method.
 
         p1 = Point(20, 30)
@@ -597,18 +596,18 @@ def test_get_distance_traveled():
     """
     # ------------------------------------------------------------------
     # TODO: 11.  Follow the same instructions as in TODO 3 above,
-    #    but for the  GET_DISTANCE_TRAVELED  method specified above.
+    #    but for the  get_distance_traveled  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   GET_DISTANCE_TRAVELED   method')
+    print('Testing the   get_distance_traveled   method')
     print('of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_closer_to():
+def run_test_closer_to():
     """
-    Tests the   CLOSER_TO   method of the Point class.
+    Tests the   closer_to   method of the Point class.
 
     Here is the specification for the   closer_to   method:
     What comes in:
@@ -621,7 +620,7 @@ def test_closer_to():
     Side effects:
        ** You figure out WHETHER OR NOT side effect(s) MUST happen! **
 
-    EXAMPLE: The following shows   CLOSER_TO   in action.
+    EXAMPLE: The following shows   closer_to   in action.
     You may also use this example to test this method.
 
         p1 = Point(10, 20)
@@ -654,17 +653,17 @@ def test_closer_to():
     """
     # ------------------------------------------------------------------
     # TODO: 12.  Follow the same instructions as in TODO 3 above,
-    #    but for the  CLOSER_TO  method specified above.
+    #    but for the  closer_to  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   CLOSER_TO   method of the Point class.')
+    print('Testing the   closer_to   method of the Point class.')
     print('-----------------------------------------------------------')
 
 
-def test_halfway_to():
+def run_test_halfway_to():
     """
-    Tests the   HALFWAY_TO   method of the Point class.
+    Tests the   halfway_to   method of the Point class.
 
     Here is the specification for the   halfway_to   method:
     What comes in:
@@ -678,7 +677,7 @@ def test_halfway_to():
     Side effects:
        ** You figure out WHETHER OR NOT side effect(s) MUST happen! **
 
-    EXAMPLE: The following shows   HALFWAY_TO   in action.
+    EXAMPLE: The following shows   halfway_to   in action.
     You may also use this example to test this method.
 
         p1 = Point(10, 20)
@@ -710,11 +709,11 @@ def test_halfway_to():
     """
     # ------------------------------------------------------------------
     # TODO: 13.  Follow the same instructions as in TODO 3 above,
-    #    but for the  HALFWAY_TO  method specified above.
+    #    but for the  halfway_to  method specified above.
     # ------------------------------------------------------------------
     print()
     print('-----------------------------------------------------------')
-    print('Testing the   HALFWAY_TO   method of the Point class.')
+    print('Testing the   halfway_to   method of the Point class.')
     print('-----------------------------------------------------------')
 
 
