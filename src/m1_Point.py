@@ -276,12 +276,14 @@ def run_test_move_to():
         print('Expected for p2: Point(0, 99)')
         print('Actual for p2:  ', p2)
 
-        p2.move_to(0, 222)
+        check_has_no_return = p2.move_to(0, 222)
         print()
         print('Expected for p1: Point(5, -1)')
         print('Actual for p1:  ', p1)
         print('Expected for p2: Point(0, 222)')
         print('Actual for p2:  ', p2)
+        if check_has_no_return is not None:
+            print('*** FAILED: This method should have had no value returned! ***')
     """
     # ------------------------------------------------------------------
     # TODO: 6.  Follow the same instructions as in TO-DO 3 above,
@@ -336,12 +338,14 @@ def run_test_move_by():
         print('Expected for p2: Point(250, 20)')
         print('Actual for p2:  ', p2)
 
-        p2.move_by(-100, 300)
+        check_has_no_return = p2.move_by(-100, 300)
         print()
         print('Expected for p1: Point(15, 7)')
         print('Actual for p1:  ', p1)
         print('Expected for p2: Point(150, 320)')
         print('Actual for p2:  ', p2)
+        if check_has_no_return is not None:
+            print('*** FAILED: This method should have had no value returned! ***')
     """
     # ------------------------------------------------------------------
     # TODO: 7.  Follow the same instructions as in TO-DO 3 above,
